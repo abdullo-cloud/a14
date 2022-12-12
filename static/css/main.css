@@ -1,0 +1,19 @@
+.navbar-nav {
+    padding: 0 50px;
+}
+
+
+.nav-link {
+    padding: 0 30px;
+    width: 150px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.p{
+    font-family: sans-serif;
+}
+
