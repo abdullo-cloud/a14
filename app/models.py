@@ -28,6 +28,22 @@ class Contact(models.Model):
 
     def get_absolute_url(self):
         return reverse('contact')
+        
+
+class Registration(models.Model):
+    name = models.CharField(max_length=10)
+    username = models.CharField(max_length=15)
+    phone = models.CharField(max_length=13)
+    email = models.EmailField(max_length=30)
+    password = models.CharField( max_length=16)
+    confirm_password = models.CharField( max_length=16)
+    
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('succes')
 
 
 

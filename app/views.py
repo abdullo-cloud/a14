@@ -20,6 +20,12 @@ class Myteam(TemplateView):
     template_name = "myteam.html"
 class Reklama(TemplateView):
     template_name = "reklama.html"
+class Registration(CreateView):
+    model = Registration
+    template_name = "registration.html"
+    fields = "__all__"
+class Succes(TemplateView):
+    template_name = "succes.html"
 
 # Create your views here.
 

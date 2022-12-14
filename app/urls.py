@@ -9,6 +9,7 @@ urlpatterns = [
     path('contact/', Contact.as_view(),name = "contact"),
     path('myteam/', Myteam.as_view(),name = "myteam"),
     path('reklama/', Reklama.as_view(),name = "reklama"),
-
+    path('registration/', Registration.as_view(),name = "registration"),
+    path('succes/', Succes.as_view(),name = "succes"),
 ]
 
